@@ -1,0 +1,374 @@
+body{
+    margin: 0;
+    line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1150px; 
+    
+    margin: 0 auto;
+}
+
+
+.header{
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    z-index: 1000;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.nav{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    display: inline-block;
+    margin: 0 5px;
+    
+    color: white;
+    text-decoration: none;
+    border: 1.5px solid white;
+    border-radius: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    
+    transition: color .4s linear;
+}
+
+.nav__link:hover{
+    background: #fffaf0; /*#f8f8ff; /*white;*/
+    color: black;
+}
+
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/background/03-mercedes-benz-mbsocialcar-s-class-s-500-v-222-calendar-december-2018-3400x1440.jpeg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__title{
+    font-size: 80px;
+    max-width: 500px;
+    line-height: 1;
+    text-align: left;
+    color: white;
+    
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 150px;
+}
+
+
+.upper{
+    width: 100%;
+    height: 950px;
+}
+
+.upper__title{
+    font-size: 50px;
+    color: black;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__images{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 50px 150px 0 150px;
+}
+
+.image:hover{
+    transform: scale(1.08);
+}
+
+.container__text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        
+    margin: 0 235px;
+}
+
+.type__text{
+    font-size: 40px;
+    line-height: 25px;
+    
+    color: black;
+    text-decoration: none;
+    
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 15px 15px;
+    
+    transition: color .4s linear;
+}
+
+.type__text:hover{
+    background: black;
+    color: white;
+}
+
+
+.middle{
+    height: 625px;
+    background: #f8f8ff;
+}
+
+.middle__container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.middle__title{
+    font-size: 45px;
+    font-weight: 600;
+    color: black;
+    
+    line-height: 70px;
+    padding-top: 60px;
+}
+
+.middle__info{
+    font-size: 18px;
+    color: #808080;
+    padding-top: 30px;
+}
+
+.container__aboutus{
+    line-height: 120px;
+}
+
+.button__aboutus{    
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    
+    transition: color 0.3s linear;
+}
+
+.button__aboutus:hover{
+    border: 1.5px solid black;
+    background: #8fbc8f; /*#3cb371; /*#8fbc8f; /*#5f9ea0;*/
+    color: white;
+}
+
+
+.footer{
+    height: 145px;
+    background: #232628; /*#d3d3d3;*/
+}
+
+.footer__titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+    margin: 0 10px;
+    
+    color: white;
+}
+
+.info__title{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.some__info{
+    line-height: 25px;
+}
+
+.date{
+    color: #aaa;
+    font-weight: 700;
+}
+
+.contacts{
+    font-weight: 700;
+}
+
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    transition: opacity 400ms ease-in;
+    display: none;    
+    pointer-events: none;
+}
+
+.modalDialog:target{
+    display: block;
+    pointer-events: auto;
+}
+ 
+.modalDialog > div {
+    width: 185px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover{
+    background: #00d9ff;
+}
+
+
+.authorization{
+    text-align: center;
+}
+
+.sign__text{
+    width: 173px;
+    height: 20px;
+    margin: 7px 0;
+    padding: 0 5px;
+    border: 1.2px solid black;
+    border-radius: 2px;
+}
+
+.sign__text:focus{
+    background: #00d9ff
+}
+
+.container__submit{
+    text-align: center;
+    margin: 8px 0 0 0;
+}
+
+.sign__sibmit{
+    /*text-align: center;*/
+    border-radius: 4px;
+    color: black;
+    height: 30px;
+    width: 185px;
+}
+
+input[type=submit]:hover{
+    background-color: #00d9ff;
+}
+
+.container__linkreg{
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.link__reg{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+.link__reg:hover{
+    opacity: 1;
+    text-decoration-line: underline;
+}
+
+.container__forgpass{
+    text-align: center;
+}
+
+.forg__pass{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+.forg__pass:hover{
+    opacity: 1;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 1150px)
+{
+    .header, .intro, .upper, .middle, .footer {
+        max-width: 1320px;
+        min-width: 1320px;
+    }
+    
+    .intro{
+        max-height: 627px;
+        min-height: 627px;
+    }
+    
+    .upper{
+        max-height: 950px;
+        min-height: 950px;
+    }
+    
+    .middle{
+        max-height: 625px;
+        min-height: 625px;
+    }
+    
+    .footer{
+        max-height: 145px;
+        min-height: 145px;
+    }
+}
